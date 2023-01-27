@@ -16,10 +16,21 @@ header {
     color: #ffffff;
 }
 
-header h1 {
+/*the header elements are defined at the top because they apply to the whole website and isnt needed in the later sections of the style sheet*/
+h1 {
     display: inline-block;
     font-size: 48px;
 } 
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3 {
+margin-bottom: 10px;
+    text-align: center;
+}
 
 /* remove the .seo part of the header from the style sheet after the html file is refactored*/
 /*header h1 .seo {
@@ -54,8 +65,8 @@ p {
     font-size: 16px;
 }
 
-/* put the image in the html file to improve accesability */
-.hero {
+/* put the image in the html file to improve accesability, changed .hero to nav, like on the html file*/
+nav {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
@@ -64,14 +75,74 @@ p {
     background-position: center;
 }
 
+/*combine all of these into a single class that defines the section elelments in order to declutter the style sheet*/
+/*moved section elements above aside elements, like how they are in the html file*/
+ .left-section {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+/*.online-reputation-management {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}
+
+.social-media-marketing {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #0072bb;
+    color: #ffffff;
+}*/
+
+/*add these three sections to the float-left and float-right class sections*/
+/*.search-engine-optimization img {
+    max-height: 200px;
+}
+
+.online-reputation-management img {
+    max-height: 200px;
+}
+
+.social-media-marketing img {
+    max-height: 200px;
+}*/
+
+/*remove h2 from the style sheet and move it further up the css sheet*/
+/* .search-engine-optimization h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}*/
+
+/*.online-reputation-management h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}*/
+
+/*.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+} */
+
 .float-left {
     float: left;
     margin-right: 25px;
+    max-height: 200px;
 }
 
 .float-right {
     float: right;
     margin-left: 25px;
+    max-height: 200px;
 }
 
 .content {
@@ -107,6 +178,8 @@ p {
     color: #ffffff;
 }
 
+/*the h3 eolements are already defined after the h2 elements */
+/*
 .benefit-lead h3 {
     margin-bottom: 10px;
     text-align: center;
@@ -121,6 +194,7 @@ p {
     margin-bottom: 10px;
     text-align: center;
 }
+*/
 
 .benefit-lead img {
     display: block;
@@ -140,63 +214,6 @@ p {
     max-width: 150px;
 }
 
-/*combine all of these into a single section that defines the section elelment in order to declutter the style sheet*/
-.search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-.social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff;
-}
-
-/*combine all image elements*/
-.search-engine-optimization img {
-    max-height: 200px;
-}
-
-.online-reputation-management img {
-    max-height: 200px;
-}
-
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-/*remove h2 from the style sheet */
- .search-engine-optimization h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.online-reputation-management h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-.social-media-marketing h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-} 
-
 /* make the .footer class into a semantic html element*/
 .footer {
     padding: 30px;
@@ -205,8 +222,9 @@ p {
     text-align: center;
 }
 
-.footer h2 {
+/*dont need the h2 for the footer because the h2 element has already been defined in lines 24-27 */
+/*.footer h2 {
     font-size: 20px;
-}
+}*/
 
 /* dont delete anything until you know that you dont need it, comment the line/lines out if you dont think you need it */
