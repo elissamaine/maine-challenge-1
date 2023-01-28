@@ -45,13 +45,11 @@ header div {
     font-size: 20px;
 }
 
-/*we can remove the div from between the header and ul*/
-header ul {
+header div ul {
     list-style-type: none;
 }
 
-/*we can remove the div ul from between the header and li*/
-header li {
+header div ul li {
     display: inline-block;
     margin-left: 25px;
 }
@@ -65,7 +63,7 @@ p {
     font-size: 16px;
 }
 
-/* put the image in the html file to improve accesability, changed .hero to nav, like on the html file*/
+/* image that is seen in under the header*/
 nav {
     height: 800px;
     width: 100%;
@@ -73,6 +71,13 @@ nav {
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+}
+
+/*moved this up on the style sheet so that it flows better and matched the html file*/
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
 }
 
 /*combine all of these into a single class that defines the section elelments in order to declutter the style sheet*/
@@ -145,11 +150,6 @@ nav {
     max-height: 200px;
 }
 
-.content {
-    width: 75%;
-    display: inline-block;
-    margin-left: 20px;
-}
 
 .benefits {
     margin-right: 20px;
@@ -162,12 +162,13 @@ nav {
     background-color: #2589bd;
 }
 
-/*since the  benefit lead brand and cost ar*/
-.benefit-lead {
+/*since the  benefit lead brand and cost ar all the same they can be lumped together*/
+.benefit-lead .benefit-brand .benefit-cost{
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/*
 .benefit-brand {
     margin-bottom: 32px;
     color: #ffffff;
@@ -177,6 +178,7 @@ nav {
     margin-bottom: 32px;
     color: #ffffff;
 }
+*/
 
 /*the h3 eolements are already defined after the h2 elements */
 /*
