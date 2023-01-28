@@ -145,8 +145,3 @@ footer {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
-
-/*dont need the h2 for the footer because the h2 element has already been defined in lines 24-27 */
-/*.footer h2 {
-    font-size: 20px;
-}*/
