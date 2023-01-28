@@ -16,21 +16,6 @@ header {
     color: #ffffff;
 }
 
-/*the header elements are defined at the top because they apply to the whole website and isnt needed in the later sections of the style sheet*/
-h1 {
-    display: inline-block;
-    font-size: 48px;
-} 
-
-h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
-h3 {
-margin-bottom: 10px;
-    text-align: center;
-}
 
 /* remove the .seo part of the header from the style sheet after the html file is refactored*/
 /*header h1 .seo {
@@ -52,6 +37,22 @@ header div ul {
 header div ul li {
     display: inline-block;
     margin-left: 25px;
+}
+
+/*the header elements are defined at the top because they apply to the whole website and isnt needed in the later sections of the style sheet*/
+h1 {
+    display: inline-block;
+    font-size: 48px;
+} 
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+h3 {
+margin-bottom: 10px;
+    text-align: center;
 }
 
 a {
@@ -162,6 +163,7 @@ nav {
     background-color: #2589bd;
 }
 
+
 /*since the  benefit lead brand and cost ar all the same they can be lumped together*/
 .benefit-lead .benefit-brand .benefit-cost{
     margin-bottom: 32px;
@@ -181,6 +183,7 @@ nav {
 */
 
 /*the h3 eolements are already defined after the h2 elements */
+
 /*
 .benefit-lead h3 {
     margin-bottom: 10px;
@@ -217,7 +220,7 @@ nav {
 }
 
 /* make the .footer class into a semantic html element*/
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
